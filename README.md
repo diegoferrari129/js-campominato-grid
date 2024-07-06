@@ -22,3 +22,13 @@ Ad esempio:
 Di cosa ho bisogno per generare i numeri?
 Proviamo sempre prima con dei console.log() per capire se stiamo ricevendo i dati giusti.
 Le validazioni e i controlli possiamo farli anche in un secondo momento.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+1 - richiamo l'elemento #griglia dal dom
+2 - richiamo il bottone #start dal dom e gli assegno un eventListener
+3 - inizio un ciclo for per generare 10x10 caselle
+4.1 - chiamo la funzione createSquare per generare un nuovo elemento .square ad'ogni interazione del ciclo
+4.2 - assegno un numero progressivo a ogni .square
+4.3 - appendo le caselle all'elemento #griglia
+
+- creo la funzione createSquare per generare l'elemento .square
