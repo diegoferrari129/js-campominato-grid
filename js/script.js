@@ -35,3 +35,4 @@ startGame.addEventListener('click', function(){
         grid.append(square);
     }
 });
+ 
