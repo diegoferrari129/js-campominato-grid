@@ -24,5 +24,26 @@
 }
 
 .clickedSquare {
+    background-color: skyblue;
+    color: black;
+}
+
+header {
+    background-color: black;
+}
+
+.header__button {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.btn--primary {
+    padding: 10px;
+    background-color: greenyellow;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+main {
     background-color: green;
 }

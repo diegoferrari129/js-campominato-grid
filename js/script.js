@@ -1,4 +1,3 @@
-
 // funzione per generare la casella
 function createSquare() {
 
@@ -12,22 +11,27 @@ function createSquare() {
     return elementSquare;
 }
 
-// richiamo l'elemento #grid dal dom
-const grid = document.getElementById('grid');
+const startGame = document.getElementById('start');
+startGame.addEventListener('click', function(){
 
-// inizio un ciclo di 100 interazioni 
-for (let i = 1; i <= 100; i++) {
+    // richiamo l'elemento #grid dal dom
+    const grid = document.getElementById('grid');
 
-    //assegno ad'una variabile il valore di una funzione per generare una casella ad'ogni interazione
-    let square = createSquare();
+    // inizio un ciclo di 100 interazioni 
+    for (let i = 1; i <= 100; i++) {
 
-    square.addEventListener('click', function() {
-        this.classList.toggle('clickedSquare');
-    });
+        //assegno ad'una variabile il valore di una funzione per generare una casella ad'ogni interazione
+        let square = createSquare();
 
-    // mostro il numero dell'interazione del su ogni casella creata
-    square.innerText = i;
+        square.addEventListener('click', function() {
+            console.log(i);
+            this.classList.toggle('clickedSquare');
+        });
 
-    // appendo la casella all'elemento #grid
-    grid.append(square);
-}
+        // mostro il numero dell'interazione del su ogni casella creata
+        square.innerText = i;
+        
+        // appendo la casella all'elemento #grid
+        grid.append(square);
+    }
+});
